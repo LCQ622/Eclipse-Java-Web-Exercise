@@ -1,0 +1,22 @@
+<classpath>
+  <container id="TestSpringMVC03!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/Project/eclipse project/TestSpringMVC03/WebContent/WEB-INF/lib/spring-webmvc-5.1.2.RELEASE.jar">
+      <source-attachment-path>D:/Project/JAR/Spring/spring-webmvc-5.1.2.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="BBS!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/Project/eclipse project/BBS/WebContent/WEB-INF/lib/spring-web-5.1.2.RELEASE.jar">
+      <source-attachment-path>D:/Project/JAR/Spring/spring-webmvc-5.1.2.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="TestSpringMVC02!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/Project/eclipse project/TestSpringMVC02/WebContent/WEB-INF/lib/spring-webmvc-5.1.2.RELEASE.jar">
+      <source-attachment-path>D:/Project/JAR/Spring/spring-webmvc-5.1.2.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="TestSpringMVC01!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/Project/eclipse project/TestSpringMVC01/WebContent/WEB-INF/lib/spring-webmvc-5.1.2.RELEASE.jar">
+      <source-attachment-path>D:/Project/JAR/Spring/spring-webmvc-5.1.2.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

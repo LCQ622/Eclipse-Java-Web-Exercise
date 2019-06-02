@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 使用接口的全限定类名 。 没有接口的时候，这里的是虚拟的接口全限定类名 -->
+<mapper namespace="cn.mcandoird.mapper.BillMapper">
+	<!--id属性 里填写对应接口的方法名 resultType 属性填写返回值的全限定类名 例如：这里返回的是所有数据，每一条数据就是一个Bill对象 
+		故在这里填写 实体类 cn.mcandoird.pojo.Bill -->
+	<select id="getAll" resultType="cn.mcandoird.pojo.Bill">
+		select *from bill order by date desc
+	</select>
+
+	<select id="getMaxMoney" resultType="cn.mcandoird.pojo.Bill">
+		select *from bill where
+		money=(select max(money) from bill)
+	</select>
+
+	<select id="getAllmap" resultType="cn.mcandoird.pojo.Bill">
+		select *from bill
+	</select>
+
+	<select id="getPage" parameterType="map"
+		resultType="cn.mcandoird.pojo.Bill">
+		select *from bill  order by date desc limit #{start} ,#{size}
+	</select>
+	<select id="getCount" resultType="int">
+		select  COUNT(*) from bill
+	</select>
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<context id="context1">
+		<jdbcConnection
+			connectionURL="jdbc:mysql://127.0.0.1:3306/lcq?useUnicode=true&amp;characterEncoding=utf-8"
+			driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+		<javaModelGenerator
+			targetPackage="cn.mcandroid.stus" targetProject="SSM" />
+		<sqlMapGenerator targetPackage="cn.mcandroid.mapping"
+			targetProject="SSM" />
+		<javaClientGenerator
+			targetPackage="cn.mcandroid.dao" targetProject="SSM" type="XMLMAPPER" />
+		<table schema="" tableName="stus">
+		<!-- generatedKey 标签用于设置主键    -->
+			<generatedKey column="id" sqlStatement="MySql" />
+			
+			<!-- columnOverride 标签 为设置对应的字段名   -->
+			<columnOverride column="id" property="id" />
+			<columnOverride column="name" property="name" />
+			<columnOverride column="sex" property="sex" />
+		</table>
+	</context>
+</generatorConfiguration>

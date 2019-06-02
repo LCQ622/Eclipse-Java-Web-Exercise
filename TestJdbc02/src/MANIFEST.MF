@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: cn.mcandorid.jdbc.JDBCUtil
+Class-Path: mysql-connector-java-5.1.7.jar

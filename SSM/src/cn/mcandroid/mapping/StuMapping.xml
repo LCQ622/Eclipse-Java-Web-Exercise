@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.mcandroid.dao.StuDao">
+
+	<!-- resultMap返回的数据类型映射 type为实体类的全限定类名 id为 返回类型 映射 -->
+	<resultMap type="cn.mcandroid.stus.Stu" id="stu">
+		<!--result column 为返回的数据表的对应字段 property 为实体类的对应属性 -->
+		<result column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="sex" property="sex" />
+	</resultMap>
+
+	<!-- <select>为Dao类的 对应查询方法的 具体执行语句， id为dao类对应查询方法的方法名 ，resultMap 为执行查询完成后返回的数据类型映射 -->
+	<select id="getStuALL" resultMap="stu">
+		SELECT
+		id,name,if(sex='M','男','女') AS 'sex' FROM stus
+	</select>
+
+</mapper>
